@@ -1,0 +1,23 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Generate a<br><span class="green">random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <label for="charLength">Password length</label>
+        <input type="range" id="charLength" min="8" max="20" step="1" value="15">
+        <input type="text" id="textCharLength" value="15">
+        <br>
+        <input type="checkbox" id="symbols" checked="checked">
+        <label for="symbols">Symbols</label>
+        <input type="checkbox" id="numbers" checked="checked">
+        <label for="numbers">Numbers</label>
+        <button id="generate">Generate passwords</button>
+        <hr>
+        <p class="msg">Choose one and click to copy to clipboard</p>
+        <div id="op1-el"></div>
+        <div id="op2-el"></div>
+        <script src="index.js"></script>
+    </body>
+</html>
